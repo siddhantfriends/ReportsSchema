@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/InoculationData.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/InoculationData.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/InoculationData.xsd" id="InoculationData" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:Locale="en-US" name="InoculationData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Msg">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="MsgCode" type="xs:int" />
+              <xs:element minOccurs="0" name="MsgString" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Greyhound">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="ReportDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="TrainerName" type="xs:string" />
+              <xs:element minOccurs="0" name="GreyhoundName" type="xs:string" />
+              <xs:element minOccurs="0" name="GreyhoundID" type="xs:string" />
+              <xs:element minOccurs="0" name="Innoculation" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

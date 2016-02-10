@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e927295b-f410-4ab2-afbf-80495f27b2ba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.0.83:8086/Reports.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TrialData.xsd" MetadataType="Schema" ID="c0e6ebad-ff39-4f45-a8d6-6de103016ad2" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd12" />
+    <MetadataFile FileName="KennelPaddockData.xsd" MetadataType="Schema" ID="0721aa68-7856-4e92-ab61-69643009940e" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd11" />
+    <MetadataFile FileName="NGRCData.xsd" MetadataType="Schema" ID="15645bc2-5407-43dd-a74e-0799e5a69ac2" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd8" />
+    <MetadataFile FileName="Reports.disco" MetadataType="Disco" ID="065cfb5e-3cfc-4bf2-970b-61e6dbeda1b0" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?disco" />
+    <MetadataFile FileName="ArchivedData.xsd" MetadataType="Schema" ID="c1c80fd1-1ce3-4c2a-addc-e906956840d3" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd4" />
+    <MetadataFile FileName="FormLineData.xsd" MetadataType="Schema" ID="be0e129d-3ecb-4b99-8d4f-1f4693a1aae1" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd5" />
+    <MetadataFile FileName="ReserveData.xsd" MetadataType="Schema" ID="b6e69571-ac83-49b7-8b13-d33e5610a00b" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd6" />
+    <MetadataFile FileName="ScheduleData.xsd" MetadataType="Schema" ID="ce50122e-7505-42f4-8980-e2b489f8d0dc" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd7" />
+    <MetadataFile FileName="Reports.xsd" MetadataType="Schema" ID="16123b73-b8ad-438d-935b-f0fa9eaceacb" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd0" />
+    <MetadataFile FileName="Reports1.xsd" MetadataType="Schema" ID="ad4053cd-dd3d-4357-a047-656be1334547" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd1" />
+    <MetadataFile FileName="RaceCardData.xsd" MetadataType="Schema" ID="b7bc12db-6cc0-46b1-ab55-2be248a6f161" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd2" />
+    <MetadataFile FileName="Reports2.xsd" MetadataType="Schema" ID="6f6db50b-1f40-45bb-9270-f65b17dee1a4" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd3" />
+    <MetadataFile FileName="RunnerData.xsd" MetadataType="Schema" ID="d1c48104-b145-4cae-b6c3-c9c5f8c4b526" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd10" />
+    <MetadataFile FileName="ResultData.xsd" MetadataType="Schema" ID="20f875d0-dd99-40ea-9446-d7628d96956d" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd9" />
+    <MetadataFile FileName="Reports.wsdl" MetadataType="Wsdl" ID="24749234-b202-48dc-a6d0-4e9f302d861a" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="InoculationData.xsd" MetadataType="Schema" ID="4d55a876-7406-4b69-8b3b-0a9eb8a57eee" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?xsd=xsd13" />
+    <MetadataFile FileName="Reports1.wsdl" MetadataType="Wsdl" ID="5e8c437a-1ead-410b-a301-f1f6c8725643" SourceId="1" SourceUrl="http://192.168.0.83:8086/Reports.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

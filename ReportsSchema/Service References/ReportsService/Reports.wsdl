@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://advtotes.co.uk/FormNetTM/Reports.asmx" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://advtotes.co.uk/FormNetTM/Reports.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://advtotes.co.uk/FormNetTM/Reports.asmx/Imports">
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd0" namespace="http://advtotes.co.uk/FormNetTM/Reports.asmx" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd2" namespace="http://tempuri.org/RaceCardData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd4" namespace="http://tempuri.org/ArchivedData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd5" namespace="http://tempuri.org/FormLineData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd6" namespace="http://tempuri.org/ReserveData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd7" namespace="http://tempuri.org/ScheduleData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd8" namespace="http://tempuri.org/NGRCData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd9" namespace="http://tempuri.org/ResultData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd10" namespace="http://tempuri.org/RunnerData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd11" namespace="http://tempuri.org/KennelPaddockData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd12" namespace="http://tempuri.org/TrialData.xsd" />
+      <xsd:import schemaLocation="http://192.168.0.83:8086/Reports.svc?xsd=xsd13" namespace="http://tempuri.org/InoculationData.xsd" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Reports.asmx_ClearNGRC_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearNGRC" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_ClearNGRC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearNGRCResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetAdvanceProgramme_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdvanceProgramme" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetAdvanceProgramme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdvanceProgrammeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_AdvancedProgramme_InputMessage">
+    <wsdl:part name="parameters" element="tns:AdvancedProgramme" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_AdvancedProgramme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AdvancedProgrammeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetArchivedGreyhounds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetArchivedGreyhounds" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetArchivedGreyhounds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetArchivedGreyhoundsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetFormLines_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFormLines" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetFormLines_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFormLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_FormLines_InputMessage">
+    <wsdl:part name="parameters" element="tns:FormLines" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_FormLines_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FormLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetMailListEntries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailListEntries" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetMailListEntries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailListEntriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetMailLists_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailLists" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetMailLists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailListsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetMeetingReserves_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMeetingReserves" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetMeetingReserves_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMeetingReservesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetMeetingsSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMeetingsSchedule" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetMeetingsSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMeetingsScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetNGRC_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNGRC" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetNGRC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNGRCResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetNGRCRecipients_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNGRCRecipients" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetNGRCRecipients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNGRCRecipientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetNGRCStatic_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNGRCStatic" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetNGRCStatic_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNGRCStaticResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetPARecipients_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPARecipients" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetPARecipients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPARecipientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetRaceCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRaceCard" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetRaceCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRaceCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_RaceCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:RaceCard" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_RaceCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RaceCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetRaceResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRaceResults" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetRaceResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRaceResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_RaceResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:RaceResults" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_RaceResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RaceResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetRunnersRacingWeights_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRunnersRacingWeights" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetRunnersRacingWeights_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRunnersRacingWeightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetSheetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSheetData" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetSheetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSheetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetTrialData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrialData" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GetTrialData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrialDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GradingReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GradingReport" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_GradingReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GradingReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_InoculationReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:InoculationReport" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_InoculationReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InoculationReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_IsLoggedOn_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsLoggedOn" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_IsLoggedOn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsLoggedOnResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_Logon_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logon" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_Logon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogonResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_SaveNGRC_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveNGRC" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_SaveNGRC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveNGRCResponse" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_SaveNGRCStatic_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveNGRCStatic" />
+  </wsdl:message>
+  <wsdl:message name="Reports.asmx_SaveNGRCStatic_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveNGRCStaticResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Reports.asmx">
+    <wsdl:operation name="ClearNGRC">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/ClearNGRC" message="tns:Reports.asmx_ClearNGRC_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/ClearNGRC" message="tns:Reports.asmx_ClearNGRC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvanceProgramme">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetAdvanceProgramme" message="tns:Reports.asmx_GetAdvanceProgramme_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetAdvanceProgramme" message="tns:Reports.asmx_GetAdvanceProgramme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AdvancedProgramme">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/AdvancedProgramme" message="tns:Reports.asmx_AdvancedProgramme_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/AdvancedProgramme" message="tns:Reports.asmx_AdvancedProgramme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArchivedGreyhounds">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetArchivedGreyhounds" message="tns:Reports.asmx_GetArchivedGreyhounds_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetArchivedGreyhounds" message="tns:Reports.asmx_GetArchivedGreyhounds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFormLines">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetFormLines" message="tns:Reports.asmx_GetFormLines_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetFormLines" message="tns:Reports.asmx_GetFormLines_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FormLines">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/FormLines" message="tns:Reports.asmx_FormLines_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/FormLines" message="tns:Reports.asmx_FormLines_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMailListEntries">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetMailListEntries" message="tns:Reports.asmx_GetMailListEntries_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetMailListEntries" message="tns:Reports.asmx_GetMailListEntries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMailLists">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetMailLists" message="tns:Reports.asmx_GetMailLists_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetMailLists" message="tns:Reports.asmx_GetMailLists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMeetingReserves">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetMeetingReserves" message="tns:Reports.asmx_GetMeetingReserves_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetMeetingReserves" message="tns:Reports.asmx_GetMeetingReserves_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMeetingsSchedule">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetMeetingsSchedule" message="tns:Reports.asmx_GetMeetingsSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetMeetingsSchedule" message="tns:Reports.asmx_GetMeetingsSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNGRC">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetNGRC" message="tns:Reports.asmx_GetNGRC_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetNGRC" message="tns:Reports.asmx_GetNGRC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNGRCRecipients">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetNGRCRecipients" message="tns:Reports.asmx_GetNGRCRecipients_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetNGRCRecipients" message="tns:Reports.asmx_GetNGRCRecipients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNGRCStatic">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetNGRCStatic" message="tns:Reports.asmx_GetNGRCStatic_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetNGRCStatic" message="tns:Reports.asmx_GetNGRCStatic_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPARecipients">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetPARecipients" message="tns:Reports.asmx_GetPARecipients_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetPARecipients" message="tns:Reports.asmx_GetPARecipients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRaceCard">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetRaceCard" message="tns:Reports.asmx_GetRaceCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetRaceCard" message="tns:Reports.asmx_GetRaceCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RaceCard">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/RaceCard" message="tns:Reports.asmx_RaceCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/RaceCard" message="tns:Reports.asmx_RaceCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRaceResults">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetRaceResults" message="tns:Reports.asmx_GetRaceResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetRaceResults" message="tns:Reports.asmx_GetRaceResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RaceResults">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/RaceResults" message="tns:Reports.asmx_RaceResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/RaceResults" message="tns:Reports.asmx_RaceResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRunnersRacingWeights">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetRunnersRacingWeights" message="tns:Reports.asmx_GetRunnersRacingWeights_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetRunnersRacingWeights" message="tns:Reports.asmx_GetRunnersRacingWeights_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSheetData">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetSheetData" message="tns:Reports.asmx_GetSheetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetSheetData" message="tns:Reports.asmx_GetSheetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrialData">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetTrialData" message="tns:Reports.asmx_GetTrialData_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GetTrialData" message="tns:Reports.asmx_GetTrialData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GradingReport">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GradingReport" message="tns:Reports.asmx_GradingReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/GradingReport" message="tns:Reports.asmx_GradingReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InoculationReport">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/InoculationReport" message="tns:Reports.asmx_InoculationReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/InoculationReport" message="tns:Reports.asmx_InoculationReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsLoggedOn">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/IsLoggedOn" message="tns:Reports.asmx_IsLoggedOn_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/IsLoggedOn" message="tns:Reports.asmx_IsLoggedOn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logon">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/Logon" message="tns:Reports.asmx_Logon_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/Logon" message="tns:Reports.asmx_Logon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveNGRC">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/SaveNGRC" message="tns:Reports.asmx_SaveNGRC_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/SaveNGRC" message="tns:Reports.asmx_SaveNGRC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveNGRCStatic">
+      <wsdl:input wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/SaveNGRCStatic" message="tns:Reports.asmx_SaveNGRCStatic_InputMessage" />
+      <wsdl:output wsaw:Action="http://advtotes.co.uk/FormNetTM/Reports.asmx/SaveNGRCStatic" message="tns:Reports.asmx_SaveNGRCStatic_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

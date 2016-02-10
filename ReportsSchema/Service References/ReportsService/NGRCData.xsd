@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/NGRCData.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/NGRCData.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/NGRCData.xsd" id="NGRCData" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="NGRCData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Msg">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="MsgCode" type="xs:int" />
+              <xs:element minOccurs="0" name="MsgString" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NGRCDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DetailCode" type="xs:string" />
+              <xs:element name="DetailDescription" type="xs:string" />
+              <xs:element name="ShowDate" type="xs:string" />
+              <xs:element name="ShowText" type="xs:string" />
+              <xs:element minOccurs="0" name="EnteredBy" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NGRC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" name="ID" type="xs:long" />
+              <xs:element minOccurs="0" name="TrackID" type="xs:long" />
+              <xs:element name="NewCorrection" type="xs:string" />
+              <xs:element name="GreyhoundID" type="xs:string" />
+              <xs:element name="GreyhoundName" type="xs:string" />
+              <xs:element name="Detail" type="xs:string" />
+              <xs:element minOccurs="0" name="SubDivision" type="xs:string" />
+              <xs:element minOccurs="0" name="ItemDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ItemText" type="xs:string" />
+              <xs:element name="ReportedBy" type="xs:string" />
+              <xs:element minOccurs="0" name="TrainerID" type="xs:string" />
+              <xs:element minOccurs="0" name="ReportDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ReportAuthor" type="xs:string" />
+              <xs:element minOccurs="0" name="NGRC_id" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NGRCSubDivision">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" name="ID" type="xs:long" />
+              <xs:element name="DetailCode" type="xs:string" />
+              <xs:element name="SubDivisionCode" type="xs:string" />
+              <xs:element name="SubDivisionDescription" type="xs:string" />
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="ShowDate" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

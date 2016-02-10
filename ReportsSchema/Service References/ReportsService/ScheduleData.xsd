@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/ScheduleData.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/ScheduleData.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/ScheduleData.xsd" id="ScheduleData" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="ScheduleData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Schedule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="MonthDate" type="xs:string" />
+              <xs:element minOccurs="0" name="NumRaces1" type="xs:int" />
+              <xs:element minOccurs="0" name="FirstRace1" type="xs:string" />
+              <xs:element minOccurs="0" name="LastRace1" type="xs:string" />
+              <xs:element minOccurs="0" name="NumRaces2" type="xs:int" />
+              <xs:element minOccurs="0" name="FirstRace2" type="xs:string" />
+              <xs:element minOccurs="0" name="LastRace2" type="xs:string" />
+              <xs:element minOccurs="0" name="FirstTrial1" type="xs:string" />
+              <xs:element minOccurs="0" name="LastTrial1" type="xs:string" />
+              <xs:element minOccurs="0" name="FirstTrial2" type="xs:string" />
+              <xs:element minOccurs="0" name="LastTrial2" type="xs:string" />
+              <xs:element minOccurs="0" name="FirstTrial3" type="xs:string" />
+              <xs:element minOccurs="0" name="LastTrial3" type="xs:string" />
+              <xs:element minOccurs="0" name="Notes" type="xs:string" />
+              <xs:element minOccurs="0" name="EnteredMonth" type="xs:int" />
+              <xs:element minOccurs="0" name="EnteredYear" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Msg">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="MsgCode" type="xs:int" />
+              <xs:element minOccurs="0" name="MsgString" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Track">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="PACode" type="xs:string" />
+              <xs:element minOccurs="0" name="PAName" type="xs:string" />
+              <xs:element minOccurs="0" name="SISCode" type="xs:string" />
+              <xs:element minOccurs="0" name="FBCode" type="xs:string" />
+              <xs:element minOccurs="0" name="FBName" type="xs:string" />
+              <xs:element minOccurs="0" name="RPCode" type="xs:string" />
+              <xs:element minOccurs="0" name="Address" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Email">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Address" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

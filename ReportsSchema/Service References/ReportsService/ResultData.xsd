@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/ResultData.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/ResultData.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/ResultData.xsd" id="ResultData" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="ResultData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Msg">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="MsgCode" type="xs:int" />
+              <xs:element minOccurs="0" name="MsgString" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Meeting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" name="MeetingID" type="xs:long" />
+              <xs:element minOccurs="0" name="MeetingNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="MeetingDate" type="xs:dateTime" />
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="MeetingType" type="xs:string" />
+              <xs:element minOccurs="0" name="Weather" type="xs:string" />
+              <xs:element minOccurs="0" name="CourseCondition" type="xs:string" />
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="TrackName" type="xs:string" />
+              <xs:element minOccurs="0" name="TrackAddress" type="xs:string" />
+              <xs:element minOccurs="0" name="CopyrightNotice" type="xs:string" />
+              <xs:element minOccurs="0" name="Status" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Greyhound">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="RaceNumber" type="xs:int" />
+              <xs:element minOccurs="0" name="GreyhoundName" type="xs:string" />
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="FormDate" type="xs:string" />
+              <xs:element minOccurs="0" name="Distance" type="xs:string" />
+              <xs:element minOccurs="0" name="Trap" type="xs:string" />
+              <xs:element minOccurs="0" name="SectionalTime" type="xs:string" />
+              <xs:element minOccurs="0" name="SectionalPlacings" type="xs:string" />
+              <xs:element minOccurs="0" name="PositionAtFinish" type="xs:string" />
+              <xs:element minOccurs="0" name="WinningDistance" type="xs:string" />
+              <xs:element minOccurs="0" name="WinnerSecond" type="xs:string" />
+              <xs:element minOccurs="0" name="Remarks" type="xs:string" />
+              <xs:element minOccurs="0" name="WinnerTime" type="xs:string" />
+              <xs:element minOccurs="0" name="Going" type="xs:string" />
+              <xs:element minOccurs="0" name="StartingPriceOrTrial" type="xs:string" />
+              <xs:element minOccurs="0" name="ClassOrReasonForTrial" type="xs:string" />
+              <xs:element minOccurs="0" name="AdjustedGoingTime" type="xs:string" />
+              <xs:element minOccurs="0" name="Meeting_id" type="xs:long" />
+              <xs:element minOccurs="0" name="Weight" type="xs:string" />
+              <xs:element minOccurs="0" name="DeadHeatOwner" type="xs:string" />
+              <xs:element minOccurs="0" name="DeadHeatTrainer" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Race">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" name="Race_id" type="xs:long" />
+              <xs:element minOccurs="0" name="RaceTime" type="xs:string" />
+              <xs:element minOccurs="0" name="RaceNumber" type="xs:int" />
+              <xs:element minOccurs="0" name="RaceTypeAndDistance" type="xs:string" />
+              <xs:element minOccurs="0" name="Class" type="xs:string" />
+              <xs:element minOccurs="0" name="MeetingID" type="xs:string" />
+              <xs:element minOccurs="0" name="TitleSponsor" type="xs:string" />
+              <xs:element minOccurs="0" name="QualifyingMethod" type="xs:string" />
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="PrizeString" type="xs:string" />
+              <xs:element minOccurs="0" name="TimeOff" type="xs:string" />
+              <xs:element minOccurs="0" name="SPBook" type="xs:int" />
+              <xs:element minOccurs="0" name="ResultFootnote" type="xs:string" />
+              <xs:element minOccurs="0" name="Notes" type="xs:string" />
+              <xs:element minOccurs="0" name="WinningOwner" type="xs:string" />
+              <xs:element minOccurs="0" name="WinningTrainer" type="xs:string" />
+              <xs:element minOccurs="0" name="Going" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
