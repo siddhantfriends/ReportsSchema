@@ -35,21 +35,32 @@ namespace ReportsSchema
             ReportsService.RaceCardData rcd = rclient.GetRaceCard(37);
 
             // Initialize string to be written to the file
-            string writeToFile = "";
+            string writeToFile = "<RaceCardData>\n";
 
             // Append string with the data to be written
             foreach (DataTable table in rcd.Tables)
             {
-                writeToFile += "<" + table.TableName.ToString() + ">\n";
-                foreach (DataColumn column in table.Columns)
+                writeToFile += "\t<" + table.TableName.ToString() + ">\n";
+                foreach (DataRow row in table.Rows)
                 {
-                    writeToFile += "\t<" + column.ColumnName.ToString() + " />\n";
+                    if (table.Rows.IndexOf(row) != 0)
+                    {
+                        writeToFile += "\n";
+                    }
+                    foreach (DataColumn column in table.Columns)
+                    {
+                        writeToFile += "\t\t<" + column.ColumnName.ToString() + ">";
+                        writeToFile += row[column.ColumnName].ToString();
+                        writeToFile += "</" + column.ColumnName.ToString() + ">\n";
+                    }
                 }
-                writeToFile += "</" + table.TableName.ToString() + ">\n";
+                writeToFile += "\t</" + table.TableName.ToString() + ">\n";
             }
 
+            writeToFile += "</RaceCardData>";
+
             // Open stream
-            System.IO.StreamWriter file = new System.IO.StreamWriter("ReportsSchema.xml");
+            System.IO.StreamWriter file = new System.IO.StreamWriter("ReportsSchemaAndData.xml");
 
             // Write to file
             file.WriteLine(writeToFile);
